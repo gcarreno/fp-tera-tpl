@@ -9,7 +9,7 @@
         <MainUnitHasScaledStatement Value="False"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <Title Value="user"/>
+      <Title Value="variables"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
@@ -19,7 +19,7 @@
         <CompilerOptions>
           <Version Value="11"/>
           <Target>
-            <Filename Value="../../bin/user"/>
+            <Filename Value="../../bin/variables"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
@@ -59,7 +59,7 @@
         <CompilerOptions>
           <Version Value="11"/>
           <Target>
-            <Filename Value="../../bin/user"/>
+            <Filename Value="../../bin/variables"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
@@ -99,7 +99,7 @@
     </RequiredPackages>
     <Units>
       <Unit>
-        <Filename Value="user.lpr"/>
+        <Filename Value="variables.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit>
     </Units>
@@ -107,7 +107,7 @@
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="../../bin/user"/>
+      <Filename Value="../../bin/variables"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

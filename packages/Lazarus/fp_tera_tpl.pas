@@ -8,7 +8,7 @@ unit fp_tera_tpl;
 interface
 
 uses
-  Tera.Context, Tera.Template;
+  Tera.Context, Tera.Template, Tera.Filters;
 
 implementation
 

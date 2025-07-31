@@ -1,4 +1,4 @@
-program user;
+program Full;
 
 {$mode objfpc}{$H+}
 
@@ -6,32 +6,40 @@ uses
   {$IFDEF UNIX}
   cthreads,
   {$ENDIF}
-  Classes,
+  SysUtils,
   { you can add units after this }
   Tera.Template,
+  Tera.Filters,
   Tera.Context;
 
 var
   Engine: TTemplateEngine;
   Ctx: TContext;
+  Langs: TArrayValue;
   Index: Integer;
+  TplFolder: String;
 begin
-  Engine := TTemplateEngine.Create('templates');
+  TplFolder:= ExtractFileDir(ParamStr(0));
+  TplFolder += '/../templates';
+  Engine := TTemplateEngine.Create(TplFolder);
   try
     Ctx := TContext.Create;
     try
       Ctx.Add('name', TStringValue.Create('Bob'));
-      Ctx.Add('role', TStringValue.Create('Pascal Wizard'));
 
-      WriteLn(Engine.Render('user.tpl', Ctx));
+      Langs:= TArrayValue.Create;
+      Langs.Items.Add('Pascal');
+      Langs.Items.Add('Go');
+      Ctx.Add('languages', Langs);
+
+      WriteLn(Engine.Render('full.tpl', Ctx));
     finally
       for Index:= 0 to Pred(Ctx.Count) do
-        TTemplateValue(Ctx.Data[Index]).Free;
+        Ctx.Data[Index].Free;
       Ctx.Free;
     end;
   finally
     Engine.Free;
   end;
-
 end.
 

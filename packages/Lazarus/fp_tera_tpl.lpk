@@ -7,7 +7,7 @@
       <Version Value="11"/>
       <SearchPaths>
         <OtherUnitFiles Value="../../src"/>
-        <UnitOutputDirectory Value="../../bin/lib/$(TargetCPU)-$(TargetOS)/"/>
+        <UnitOutputDirectory Value="../../bin/lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
     <Description Value="Tera template engine"/>
@@ -42,6 +42,10 @@ SOFTWARE.
       <Item>
         <Filename Value="../../src/tera.template.pas"/>
         <UnitName Value="Tera.Template"/>
+      </Item>
+      <Item>
+        <Filename Value="../../src/tera.filters.pas"/>
+        <UnitName Value="Tera.Filters"/>
       </Item>
     </Files>
     <RequiredPkgs>

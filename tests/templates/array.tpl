@@ -1,0 +1,4 @@
+List:
+{% for item in list %}
+- {{ item }}
+{% endfor %}
