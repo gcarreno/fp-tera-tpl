@@ -11,12 +11,13 @@ This package is an attempt to port the famous Tera template engine into Free Pas
 ## Objectives
 
 - [x] Implement full `AST` on the engine.
-- [x] Implement `{{ variables }}`.
-- [x] Implement filters: `{{ variable | upper | trim }}`.
-- [x] Implement `{% include %}`.
-- [x] Implement `{% if <expression> %}`.
+- [x] Implement `{{ <variable> }}`.
+- [x] Implement filters: `{{ <variable> | <filter> | <filter> }}`.
+- [x] Implement `{% include  "<filename>" %}`.
+- [x] Implement `{% if <expression> %}`, `{% else %}` and `{% endif %}`.
 - [x] Implement decent expression parser for `{% if <expression> %}` with `AST`.
-- [x] Implement `{% for %}`.
+- [x] Implement `{% for <variable> in <variable_array> %}` and `{% enfor %}`.
+- [ ] Implement full battery of tests.
 - [ ] Implement `{%-` and `-%}` for `TrimLeft` and `TrimRight`.
 
 ## Examples
