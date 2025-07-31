@@ -17,6 +17,7 @@ This package is an attempt to port the famous Tera template engine into Free Pas
 - [x] Implement `{% if <expression> %}`.
 - [x] Implement decent expression parser for `{% if <expression> %}` with `AST`.
 - [x] Implement `{% for %}`.
+- [ ] Implement `{%-` and `-%}` for `TrimLeft` and `TrimRight`.
 
 ## Examples
 
