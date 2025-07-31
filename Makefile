@@ -25,19 +25,21 @@ examples:
 
 variables:
 	@echo "==== Building $(@) ====";
-	$(LAZBUILD) $(LAZBUILD_OPTS) examples/$(@)/$(@).lpi
+	@$(LAZBUILD) $(PACKAGE)
+	@$(LAZBUILD) $(LAZBUILD_OPTS) examples/$(@)/$(@).lpi
 	@echo "==== Output: $(@) ===="
 	@./bin/$(@)
 
 filters:
 	@echo "==== Building $(@) ====";
-	$(LAZBUILD) $(LAZBUILD_OPTS) examples/$(@)/$(@).lpi
+	@$(LAZBUILD) $(PACKAGE)
+	@$(LAZBUILD) $(LAZBUILD_OPTS) examples/$(@)/$(@).lpi
 	@echo "==== Output: $(@) ===="
 	@./bin/$(@)
 
 full:
 	@echo "==== Building $(@) ====";
-	$(LAZBUILD) $(LAZBUILD_OPTS) examples/$(@)/$(@).lpi
+	@$(LAZBUILD) $(LAZBUILD_OPTS) examples/$(@)/$(@).lpi
 	@echo "==== Output: $(@) ===="
 	@./bin/$(@)
 
