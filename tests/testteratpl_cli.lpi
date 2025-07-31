@@ -23,7 +23,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="filters;context;template"/>
+            <OtherUnitFiles Value="filters;context;engine"/>
             <UnitOutputDirectory Value="../bin/lib/$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -64,7 +64,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="filters;context;template"/>
+            <OtherUnitFiles Value="filters;context;engine"/>
             <UnitOutputDirectory Value="../bin/lib/$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -118,9 +118,9 @@
         <UnitName Value="TestTeraContext"/>
       </Unit>
       <Unit>
-        <Filename Value="template/testteratemplate.pas"/>
+        <Filename Value="engine/testteraengine.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="TestTeraTemplate"/>
+        <UnitName Value="TestTeraEngine"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -131,7 +131,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="filters;context;template"/>
+      <OtherUnitFiles Value="filters;context;engine"/>
       <UnitOutputDirectory Value="../bin/lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Other>

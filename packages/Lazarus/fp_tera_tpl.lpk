@@ -36,16 +36,20 @@ SOFTWARE.
     <Version Build="1"/>
     <Files>
       <Item>
+        <Filename Value="../../src/tera.engine.pas"/>
+        <UnitName Value="Tera.Engine"/>
+      </Item>
+      <Item>
         <Filename Value="../../src/tera.context.pas"/>
         <UnitName Value="Tera.Context"/>
       </Item>
       <Item>
-        <Filename Value="../../src/tera.template.pas"/>
-        <UnitName Value="Tera.Template"/>
-      </Item>
-      <Item>
         <Filename Value="../../src/tera.filters.pas"/>
         <UnitName Value="Tera.Filters"/>
+      </Item>
+      <Item>
+        <Filename Value="../../src/tera.expressionparser.pas"/>
+        <UnitName Value="Tera.ExpressionParser"/>
       </Item>
     </Files>
     <RequiredPkgs>

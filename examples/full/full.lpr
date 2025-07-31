@@ -8,12 +8,12 @@ uses
   {$ENDIF}
   SysUtils,
   { you can add units after this }
-  Tera.Template,
+  Tera.Engine,
   Tera.Filters,
   Tera.Context;
 
 var
-  Engine: TTemplateEngine;
+  Engine: TTeraEngine;
   Ctx: TContext;
   Langs: TArrayValue;
   Index: Integer;
@@ -21,7 +21,7 @@ var
 begin
   TplFolder:= ExtractFileDir(ParamStr(0));
   TplFolder += '/../templates';
-  Engine := TTemplateEngine.Create(TplFolder);
+  Engine := TTeraEngine.Create(TplFolder);
   try
     Ctx := TContext.Create;
     try
@@ -32,7 +32,8 @@ begin
       Langs.Items.Add('Go');
       Ctx.Add('languages', Langs);
 
-      WriteLn(Engine.Render('full.tpl', Ctx));
+      Engine.Parse('full.tpl');
+      WriteLn(Engine.Render(Ctx));
     finally
       for Index:= 0 to Pred(Ctx.Count) do
         Ctx.Data[Index].Free;

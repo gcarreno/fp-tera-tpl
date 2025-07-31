@@ -6,7 +6,9 @@ uses
   Interfaces
 , Forms
 , GuiTestRunner
-, TestTeraFilters, TestTeraContext, TestTeraTemplate
+, TestTeraFilters
+, TestTeraContext
+, TestTeraEngine
 ;
 
 {$R *.res}

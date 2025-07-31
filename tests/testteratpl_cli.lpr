@@ -7,7 +7,7 @@ uses
 , consoletestrunner
 , TestTeraFilters
 , TestTeraContext
-, TestTeraTemplate
+, TestTeraEngine
 ;
 
 type

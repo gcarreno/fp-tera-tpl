@@ -10,8 +10,8 @@ This package is an attempt to port the famous Tera template engine into Free Pas
 
 ## Objectives
 
-- [x] Implement variables
-- [x] Implement filters: `{{ name | upper | trim }}`
+- [x] Implement `{{ variables }}`
+- [x] Implement filters: `{{ variable | upper | trim }}`
 - [x] Implement `{% include %}`
 - [x] Implement `{% if %}`
 - [x] Implement `{% for %}`

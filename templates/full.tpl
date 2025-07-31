@@ -7,5 +7,6 @@
 
 Languages:
 {% for lang in languages %}
-- {{ lang }}
+- {{ lang | upper }}
 {% endfor %}
+{% include "footer.tpl" %}

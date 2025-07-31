@@ -8,26 +8,27 @@ uses
   {$ENDIF}
   SysUtils,
   { you can add units after this }
-  Tera.Template,
+  Tera.Engine,
   Tera.Filters,
   Tera.Context;
 
 var
-  Engine: TTemplateEngine;
+  Engine: TTeraEngine;
   Ctx: TContext;
   Index: Integer;
   TplFolder: String;
 begin
   TplFolder:= ExtractFileDir(ParamStr(0));
   TplFolder += '/../templates';
-  Engine := TTemplateEngine.Create(TplFolder);
+  Engine := TTeraEngine.Create(TplFolder);
   try
     Ctx := TContext.Create;
     try
       Ctx.Add('name', TStringValue.Create('Bob'));
       Ctx.Add('role', TStringValue.Create('Pascal Wizard'));
 
-      WriteLn(Engine.Render('filters.tpl', Ctx));
+      Engine.Parse('filters.tpl');
+      WriteLn(Engine.Render(Ctx));
     finally
       for Index:= 0 to Pred(Ctx.Count) do
         TTemplateValue(Ctx.Data[Index]).Free;

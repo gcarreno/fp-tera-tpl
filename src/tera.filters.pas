@@ -37,6 +37,16 @@ begin
   Result := Trim(S);
 end;
 
+function FunctionTrimLeft(const S: String): String;
+begin
+  Result := TrimLeft(S);
+end;
+
+function FunctionTrimRight(const S: String): String;
+begin
+  Result := TrimRight(S);
+end;
+
 function FunctionLength(const S: String): String;
 begin
   Result := IntToStr(Length(S));
@@ -53,6 +63,8 @@ begin
   RegisterFilter('upper', @FunctionUpper);
   RegisterFilter('lower', @FunctionLower);
   RegisterFilter('trim', @FunctionTrim);
+  RegisterFilter('trimleft', @FunctionTrimLeft);
+  RegisterFilter('trimright', @FunctionTrimRight);
   RegisterFilter('length', @FunctionLength);
 end;
 

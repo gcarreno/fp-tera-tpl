@@ -1,4 +1,4 @@
-unit TestTeraTemplate;
+unit TestTeraEngine;
 
 {$mode objfpc}{$H+}
 
@@ -10,7 +10,7 @@ uses
 , fpcunit
 //, testutils
 , testregistry
-, Tera.Template
+, Tera.Engine
 , Tera.Context
 ;
 
@@ -19,7 +19,7 @@ type
 { TTestTeraTemplate }
   TTestTeraTemplate= class(TTestCase)
   private
-    FTemplate: TTemplateEngine;
+    FTemplate: TTeraEngine;
   protected
   public
   published
@@ -46,7 +46,7 @@ begin
   lExpectedFolder:= ExtractFileDir(ParamStr(0));
   lExpectedFolder += '/templates/';
 
-  FTemplate:= TTemplateEngine.Create(lTplFolder);
+  FTemplate:= TTeraEngine.Create(lTplFolder);
   try
     AssertEquals('Base Dir', lExpectedFolder, FTemplate.BaseDir);
   finally
@@ -57,7 +57,7 @@ end;
 procedure TTestTeraTemplate.TestTemplateVariable;
 var
   lTplFolder, lResult: String;
-  lCtx: TContext;
+  lContext: TContext;
   lIndex: Integer;
 begin
   lTplFolder:= ExtractFileDir(ParamStr(0));
@@ -65,17 +65,18 @@ begin
 
   lResult:= '';
 
-  FTemplate:= TTemplateEngine.Create(lTplFolder);
+  FTemplate:= TTeraEngine.Create(lTplFolder);
   try
-    lCtx:= TContext.Create;
+    lContext:= TContext.Create;
     try
-      lCtx.Add('variable', TStringValue.Create('value'));
-      lResult:= FTemplate.Render('variable.tpl', lCtx);
+      lContext.Add('variable', TStringValue.Create('value'));
+      FTemplate.Parse('variable.tpl');
+      lResult:= FTemplate.Render(lContext);
       AssertEquals('Variable is value', 'value'+LineEnding, lResult);
     finally
-      for lIndex:= 0 to Pred(LCtx.Count) do
-        lCtx.Data[lIndex].Free;
-      lCtx.Free;
+      for lIndex:= 0 to Pred(lContext.Count) do
+        lContext.Data[lIndex].Free;
+      lContext.Free;
     end;
   finally
     FTemplate.Free;
@@ -85,21 +86,22 @@ end;
 procedure TTestTeraTemplate.TestTemplateInclude;
 var
   lTplFolder, lResult: String;
-  lCtx: TContext;
+  lContext: TContext;
 begin
   lTplFolder:= ExtractFileDir(ParamStr(0));
   lTplFolder += '/../tests/templates';
 
   lResult:= '';
 
-  FTemplate:= TTemplateEngine.Create(lTplFolder);
+  FTemplate:= TTeraEngine.Create(lTplFolder);
   try
-    lCtx:= TContext.Create;
+    lContext:= TContext.Create;
     try
-      lResult:= FTemplate.Render('include.tpl', lCtx);
-      AssertEquals('Include is Sub Template', 'Sub Template'+LineEnding, lResult);
+      FTemplate.Parse('include.tpl');
+      lResult:= FTemplate.Render(lContext);
+      AssertEquals('Include is Sub Template', 'Sub Template'+LineEnding+LineEnding, lResult);
     finally
-      lCtx.Free;
+      lContext.Free;
     end;
   finally
     FTemplate.Free;
@@ -109,27 +111,28 @@ end;
 procedure TTestTeraTemplate.TestTemplateIfTrue;
 var
   lTplFolder, lExpected, lResult: String;
-  lCtx: TContext;
+  lContext: TContext;
   lIndex: Integer;
 begin
   lTplFolder:= ExtractFileDir(ParamStr(0));
   lTplFolder += '/../tests/templates';
 
-  lExpected:= '  Hello, Supreme Overlord Bob!';
+  lExpected:= 'Hello, Supreme Overlord Bob!';
 
   lResult:= '';
 
-  FTemplate:= TTemplateEngine.Create(lTplFolder);
+  FTemplate:= TTeraEngine.Create(lTplFolder);
   try
-    lCtx:= TContext.Create;
+    lContext:= TContext.Create;
     try
-      lCtx.Add('name', TStringValue.Create('Bob'));
-      lResult:= FTemplate.Render('if.tpl', lCtx);
-      AssertEquals('If result', lExpected+LineEnding, lResult);
+      lContext.Add('name', TStringValue.Create('Bob'));
+      FTemplate.Parse('if.tpl');
+      lResult:= FTemplate.Render(lContext);
+      AssertEquals('If result', lExpected+LineEnding+LineEnding, lResult);
     finally
-      for lIndex:= 0 to Pred(LCtx.Count) do
-        lCtx.Data[lIndex].Free;
-      lCtx.Free;
+      for lIndex:= 0 to Pred(lContext.Count) do
+        lContext.Data[lIndex].Free;
+      lContext.Free;
     end;
   finally
     FTemplate.Free;
@@ -139,27 +142,28 @@ end;
 procedure TTestTeraTemplate.TestTemplateIfFalse;
 var
   lTplFolder, lExpected, lResult: String;
-  lCtx: TContext;
+  lContext: TContext;
   lIndex: Integer;
 begin
   lTplFolder:= ExtractFileDir(ParamStr(0));
   lTplFolder += '/../tests/templates';
 
-  lExpected:= '  Hello, Alice!';
+  lExpected:= 'Hello, Alice!';
 
   lResult:= '';
 
-  FTemplate:= TTemplateEngine.Create(lTplFolder);
+  FTemplate:= TTeraEngine.Create(lTplFolder);
   try
-    lCtx:= TContext.Create;
+    lContext:= TContext.Create;
     try
-      lCtx.Add('name', TStringValue.Create('Alice'));
-      lResult:= FTemplate.Render('if.tpl', lCtx);
-      AssertEquals('If result', lExpected+LineEnding, lResult);
+      lContext.Add('name', TStringValue.Create('Alice'));
+      FTemplate.Parse('if.tpl');
+      lResult:= FTemplate.Render(lContext);
+      AssertEquals('If result', lExpected+LineEnding+LineEnding, lResult);
     finally
-      for lIndex:= 0 to Pred(LCtx.Count) do
-        lCtx.Data[lIndex].Free;
-      lCtx.Free;
+      for lIndex:= 0 to Pred(lContext.Count) do
+        lContext.Data[lIndex].Free;
+      lContext.Free;
     end;
   finally
     FTemplate.Free;
@@ -169,7 +173,7 @@ end;
 procedure TTestTeraTemplate.TestTemplateFor;
 var
   lTplFolder, lExpected, lResult: String;
-  lCtx: TContext;
+  lContext: TContext;
   lArrayValue: TArrayValue;
   lIndex: Integer;
 begin
@@ -183,20 +187,22 @@ begin
 
   lResult:= '';
 
-  FTemplate:= TTemplateEngine.Create(lTplFolder);
+  FTemplate:= TTeraEngine.Create(lTplFolder);
   try
-    lCtx:= TContext.Create;
+    lContext:= TContext.Create;
     try
       lArrayValue:= TArrayValue.Create;
       lArrayValue.Items.Append('one');
       lArrayValue.Items.Append('two');
-      lCtx.Add('list', lArrayValue);
-      lResult:= FTemplate.Render('array.tpl', lCtx);
-      AssertEquals('Array result', lExpected, lResult);
+      lContext.Add('items', lArrayValue);
+
+      FTemplate.Parse('array.tpl');
+      lResult:= FTemplate.Render(lContext);
+      AssertEquals('Array result', lExpected+LineEnding, lResult);
     finally
-      for lIndex:= 0 to Pred(LCtx.Count) do
-        lCtx.Data[lIndex].Free;
-      lCtx.Free;
+      for lIndex:= 0 to Pred(lContext.Count) do
+        lContext.Data[lIndex].Free;
+      lContext.Free;
     end;
   finally
     FTemplate.Free;
