@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <UserPkgLinks Version="3" Count="29">
+    <Item1>
+      <Name Value="BGLControls"/>
+      <Version Major="1" Minor="2"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/BGRABitmap/bglcontrols/bglcontrols.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item1>
+    <Item2>
+      <Name Value="BGRABitmapPack"/>
+      <Version Major="11" Minor="6" Release="6"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/BGRABitmap/bgrabitmap/bgrabitmappack.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item2>
+    <Item3>
+      <Name Value="bgracontrols"/>
+      <Version Major="9" Release="2"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/BGRAControls/bgracontrols.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item3>
+    <Item4>
+      <Name Value="bgrapascalscriptcomponent"/>
+      <Version Major="9" Release="2"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/BGRAControls/bgrapascalscriptcomponent.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item4>
+    <Item5>
+      <Name Value="CryptoLib4PascalPackage"/>
+      <Version Major="3" Minor="1"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/CryptoLib4Pascal/CryptoLib/src/Packages/FPC/CryptoLib4PascalPackage.lpk"/>
+      <LastUsed Value="2025/07/02 15:03:39"/>
+    </Item5>
+    <Item6>
+      <Name Value="dcpcrypt"/>
+      <Version Major="2" Release="4" Build="2"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/DCPcrypt/dcpcrypt.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item6>
+    <Item7>
+      <Name Value="dcpcrypt_laz"/>
+      <Version Major="2" Release="4" Build="2"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/DCPcrypt/dcpcrypt_laz.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item7>
+    <Item8>
+      <Name Value="fp_humanize"/>
+      <Version Build="6"/>
+      <Filename Value="/home/gcarreno/Programming/fp-humanize/packages/Lazarus/fp_humanize.lpk"/>
+      <LastUsed Value="2025/07/17 06:57:14"/>
+    </Item8>
+    <Item9>
+      <Name Value="fp_tera_tpl"/>
+      <Version Build="1"/>
+      <Filename Value="/home/gcarreno/Programming/fp-tera-tpl/packages/Lazarus/fp_tera_tpl.lpk"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item9>
+    <Item10>
+      <Name Value="fp_TWUtils"/>
+      <Filename Value="/home/gcarreno/Projects/Discord/vartan/fp-twutils/packages/fp_twutils.lpk"/>
+      <LastUsed Value="2025/07/02 08:53:41"/>
+    </Item10>
+    <Item11>
+      <Name Value="HashLib4PascalPackage"/>
+      <Version Major="4" Minor="1"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/HashLib/src/Packages/FPC/HashLib4PascalPackage.lpk"/>
+      <LastUsed Value="2025/07/02 15:03:39"/>
+    </Item11>
+    <Item12>
+      <Name Value="Humanize"/>
+      <Version Release="5"/>
+      <Filename Value="/home/gcarreno/Programming/fp-humanize/packages/Lazarus/humanize.lpk"/>
+      <LastUsed Value="2025/06/28 08:00:17"/>
+    </Item12>
+    <Item13>
+      <Name Value="indylaz"/>
+      <Version Major="10" Minor="6" Release="3" Build="2"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/Indy10/indylaz.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item13>
+    <Item14>
+      <Name Value="lazbarcodes"/>
+      <Version Major="2" Release="2"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/lazbarcodes/packages/lazbarcodes.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item14>
+    <Item15>
+      <Name Value="lazbarcodes_runtimeonly"/>
+      <Version Major="2" Release="2"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/lazbarcodes/packages/lazbarcodes_runtimeonly.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item15>
+    <Item16>
+      <Name Value="laz_synapse"/>
+      <Version Major="40" Minor="1"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/synapse40.1/laz_synapse.lpk"/>
+      <LastUsed Value="2025/06/28 07:57:52"/>
+    </Item16>
+    <Item17>
+      <Name Value="MiniLib"/>
+      <Version Major="1" Release="2"/>
+      <Filename Value="/home/gcarreno/Programming/minilib/lib/MiniLib.lpk"/>
+      <LastUsed Value="2025/07/17 06:55:39"/>
+    </Item17>
+    <Item18>
+      <Name Value="MiniSockets"/>
+      <Version Major="1" Release="3" Build="7"/>
+      <Filename Value="/home/gcarreno/Programming/minilib/socket/source/MiniSockets.lpk"/>
+      <LastUsed Value="2025/07/17 06:56:05"/>
+    </Item18>
+    <Item19>
+      <Name Value="multiloglaz"/>
+      <Version Minor="7"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/MultiLog/multiloglaz.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item19>
+    <Item20>
+      <Name Value="NumCPULib4PascalPackage"/>
+      <Version Major="1" Minor="3"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/NumCPULib/src/Packages/FPC/NumCPULib4PascalPackage.lpk"/>
+      <LastUsed Value="2025/06/25 05:36:10"/>
+    </Item20>
+    <Item21>
+      <Name Value="PascalTZ"/>
+      <Version Major="2" Minor="2"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/PascalTZ/package/pascaltz.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item21>
+    <Item22>
+      <Name Value="QRCodeGenLib4PascalPackage"/>
+      <Version Major="1" Minor="8"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/QRCodeGenLib/src/Packages/FPC/QRCodeGenLib4PascalPackage.lpk"/>
+      <LastUsed Value="2025/06/25 05:30:22"/>
+    </Item22>
+    <Item23>
+      <Name Value="SimpleBaseLib4PascalPackage"/>
+      <Version Major="2" Minor="5"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/SimpleBaseLib/src/Packages/FPC/SimpleBaseLib4PascalPackage.lpk"/>
+      <LastUsed Value="2025/07/02 15:03:39"/>
+    </Item23>
+    <Item24>
+      <Name Value="zcomponent"/>
+      <Version Major="8"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/zeosdbo/packages/lazarus/zcomponent.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item24>
+    <Item25>
+      <Name Value="zcomponentdesign"/>
+      <Version Major="8"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/zeosdbo/packages/lazarus/zcomponentdesign.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item25>
+    <Item26>
+      <Name Value="zcore"/>
+      <Version Major="8"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/zeosdbo/packages/lazarus/zcore.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item26>
+    <Item27>
+      <Name Value="zdbc"/>
+      <Version Major="8"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/zeosdbo/packages/lazarus/zdbc.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item27>
+    <Item28>
+      <Name Value="zparsesql"/>
+      <Version Major="8"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/zeosdbo/packages/lazarus/zparsesql.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item28>
+    <Item29>
+      <Name Value="zplain"/>
+      <Version Major="8"/>
+      <Filename Value="/home/gcarreno/FreePascal_4.0/config_lazarus/onlinepackagemanager/packages/zeosdbo/packages/lazarus/zplain.lpk"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item29>
+  </UserPkgLinks>
+  <GlobalPkgLinks Version="3" Count="60">
+    <Item1>
+      <Name Value="anchordocking"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item1>
+    <Item2>
+      <Name Value="anchordockingdsgn"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item2>
+    <Item3>
+      <Name Value="buildintf"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item3>
+    <Item4>
+      <Name Value="cairocanvas_pkg"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item4>
+    <Item5>
+      <Name Value="chmhelppkg"/>
+      <Version Minor="2" Release="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item5>
+    <Item6>
+      <Name Value="cmdlinedebuggerbase"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item6>
+    <Item7>
+      <Name Value="codetools"/>
+      <Version Major="1" Release="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item7>
+    <Item8>
+      <Name Value="cody"/>
+      <Version Major="1" Minor="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item8>
+    <Item9>
+      <Name Value="datetimectrls"/>
+      <Version Major="1" Minor="5" Release="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item9>
+    <Item10>
+      <Name Value="datetimectrlsdsgn"/>
+      <Version Major="1" Minor="5" Release="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item10>
+    <Item11>
+      <Name Value="dbflaz"/>
+      <Version Minor="1" Release="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item11>
+    <Item12>
+      <Name Value="debuggerintf"/>
+      <Version Minor="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item12>
+    <Item13>
+      <Name Value="dockedformeditor"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item13>
+    <Item14>
+      <Name Value="externhelp"/>
+      <Version Major="1" Minor="3"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item14>
+    <Item15>
+      <Name Value="fcl"/>
+      <Version Major="1" Release="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item15>
+    <Item16>
+      <Name Value="fpcunitide"/>
+      <Version Minor="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item16>
+    <Item17>
+      <Name Value="fpcunittestrunner"/>
+      <Version Minor="1"/>
+      <LastUsed Value="2025/07/02 08:47:00"/>
+    </Item17>
+    <Item18>
+      <Name Value="fpdebug"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item18>
+    <Item19>
+      <Name Value="freetypelaz"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item19>
+    <Item20>
+      <Name Value="ideconfig"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item20>
+    <Item21>
+      <Name Value="idedebugger"/>
+      <Version Release="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item21>
+    <Item22>
+      <Name Value="ideintf"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item22>
+    <Item23>
+      <Name Value="idepackager"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item23>
+    <Item24>
+      <Name Value="ideproject"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item24>
+    <Item25>
+      <Name Value="ideutilspkg"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item25>
+    <Item26>
+      <Name Value="instantfpclaz"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item26>
+    <Item27>
+      <Name Value="jcfbase"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item27>
+    <Item28>
+      <Name Value="jcfidelazarus"/>
+      <Version Major="2"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item28>
+    <Item29>
+      <Name Value="laz.virtualtreeview_package"/>
+      <Version Major="5" Minor="5" Release="3" Build="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item29>
+    <Item30>
+      <Name Value="lazcontroldsgn"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item30>
+    <Item31>
+      <Name Value="lazcontrols"/>
+      <Version Major="1" Release="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item31>
+    <Item32>
+      <Name Value="lazdaemon"/>
+      <Version Minor="9" Release="9"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item32>
+    <Item33>
+      <Name Value="lazdebuggerfp"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item33>
+    <Item34>
+      <Name Value="lazdebuggerfplldb"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item34>
+    <Item35>
+      <Name Value="lazdebuggergdbmi"/>
+      <Version Minor="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item35>
+    <Item36>
+      <Name Value="lazdebuggerintf"/>
+      <Version Release="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item36>
+    <Item37>
+      <Name Value="lazdebuggerlldb"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item37>
+    <Item38>
+      <Name Value="lazedit"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item38>
+    <Item39>
+      <Name Value="lazmouseandkeyinput"/>
+      <Version Minor="9"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item39>
+    <Item40>
+      <Name Value="lazopenglcontext"/>
+      <Version Release="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item40>
+    <Item41>
+      <Name Value="laztestinsight"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item41>
+    <Item42>
+      <Name Value="lazutils"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item42>
+    <Item43>
+      <Name Value="lcl"/>
+      <Version Major="4" Build="4"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item43>
+    <Item44>
+      <Name Value="lclbase"/>
+      <Version Major="4" Build="4"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item44>
+    <Item45>
+      <Name Value="lclextensions_package"/>
+      <Version Minor="6" Release="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item45>
+    <Item46>
+      <Name Value="leakview"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item46>
+    <Item47>
+      <Name Value="lhelpcontrolpkg"/>
+      <Version Minor="2"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item47>
+    <Item48>
+      <Name Value="memdslaz"/>
+      <Version Major="1" Minor="2" Release="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item48>
+    <Item49>
+      <Name Value="onlinepackagemanager"/>
+      <Version Major="1" Release="1" Build="2"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item49>
+    <Item50>
+      <Name Value="pascalscript"/>
+      <Version Build="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item50>
+    <Item51>
+      <Name Value="printer4lazarus"/>
+      <Version Minor="5"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item51>
+    <Item52>
+      <Name Value="projtemplates"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item52>
+    <Item53>
+      <Name Value="sdflaz"/>
+      <Version Minor="1" Release="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item53>
+    <Item54>
+      <Name Value="sqldblaz"/>
+      <Version Major="1" Release="2"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item54>
+    <Item55>
+      <Name Value="synedit"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/31 01:33:13"/>
+    </Item55>
+    <Item56>
+      <Name Value="syneditdsgn"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item56>
+    <Item57>
+      <Name Value="tachartlazaruspkg"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item57>
+    <Item58>
+      <Name Value="todolistlaz"/>
+      <Version Major="1" Release="3"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item58>
+    <Item59>
+      <Name Value="turbopoweripro"/>
+      <Version Major="1"/>
+      <LastUsed Value="2025/07/17 06:53:25"/>
+    </Item59>
+    <Item60>
+      <Name Value="weblaz"/>
+      <Version Major="1" Release="1"/>
+      <LastUsed Value="2025/07/02 08:39:16"/>
+    </Item60>
+  </GlobalPkgLinks>
+</CONFIG>
